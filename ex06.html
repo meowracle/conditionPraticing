@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex06</title>
+</head>
+<body>
+<h1>nhap vao cac gia tri cua phuong trinh bac 1</h1>
+<table>
+    <tr>
+        <input id="a" type="number">
+        x +
+        <input id="b" type="number">
+        = 0
+    </tr>
+    <tr>
+        <button id="result" onclick="result()">Click to solve</button>
+    </tr>
+</table>
+<script>
+    function result() {
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+        let x;
+        if (a == 0) {
+            if (b == 0) {
+                document.write("phuong trinh co vo so nghiem");
+            } else {
+                document.write("vo li, moi nhap lai");
+            }
+        } else {
+            x = -b / a;
+            document.write("phuong trinh co nghiem x = " + x);
+        }
+    }
+</script>
+</body>
+</html>

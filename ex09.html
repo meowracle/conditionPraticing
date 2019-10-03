@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex09</title>
+</head>
+<body>
+<script>
+    let a=parseFloat(prompt("moi nhap vao so thu nhat:"));
+    let b=parseFloat(prompt("moi nhap vao so thu hai:"));
+    let c=parseFloat(prompt("moi nhap vao so thu ba:"));
+    if (a>0 && b>0 && c>0) {
+        if (a + b > c && a + c > b && b + c > a) {
+            alert("ba so a, b, c la so do 3 canh cua mot tam giac");
+        } else {
+            alert("ba so a, b, c khong la so do 3 canh cua mot tam giac");
+        }
+    } else {
+        alert("ba so a, b, c khong la so do 3 canh cua mot tam giac");
+    }
+</script>
+</body>
+</html>
